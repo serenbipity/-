@@ -52,14 +52,6 @@ html {
     color: #320e5f;
 }
 
-.pg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    // overflow: hidden;
-}
 
 //定义设计稿宽度
 @screenWidth: 750;
@@ -112,8 +104,131 @@ html {
     margin-top: -@h/2/@vw;
 }
 
-.fade{
+.homepage{
     .setwh(750, 0);
     height: 100%;
-    background: url(../img/bj.png) no-repeat;
+    background: url(../img/bj.png) ;
+    position: relative;
+    // 文案
+    .copy{
+
+        .setwh(712, 334);
+        .cl(712);
+        top: 252 / @vw;
+        z-index: 999;
+        img{
+            width: 100%;
+        }
+    }
+    // log
+    .log{
+        .setwh(123, 165);
+        .cl(123);
+        top: 56 / @vw;
+        img{
+            width: 100%;
+        }
+    }
+
+    // 边框
+    .border-kuan{
+        .setwh(720,0);
+        height:1435 / 1435 * 100%;
+        .cl(720);
+        z-index: 4;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // 窗帘
+    .curtain{
+        position: absolute;
+        .setwh(750,998);
+        z-index: 3;
+        .rt(0, -50);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // 玻璃
+    .glass{
+        .setwh(951, 889);
+        z-index: 2;
+        .rt(0, 0);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // 风景
+    .scenery{
+        .setwh(821, 847);
+        .rt(0, 0);
+        z-index: 1;
+    }
+
+    // 船
+    .ship{
+        .setwh(71, 131);
+        .lt(401,549);
+        z-index:1;
+        img{
+            width: 100%;
+        }
+    }
+
+    // 沙发
+    .sofa{
+        .setwh(717, 389);
+        z-index: 3;
+        .cl(717);
+        top: 731 / @vw;
+        background: url(../img/sf.png) no-repeat;
+        position: relative;
+        .character{
+            .setwh(409, 257);
+            .lt(115,-46);
+        }
+    }
+
+    // 软文
+    .softWen{
+        .setwh(493, 161);
+        .lb(0,176);
+        .cl(493);
+        z-index: 999;
+        img{
+            width: 100%;
+        }
+    }
+
+    // 刷脸
+    .face{
+        .setwh(237, 107);
+        .lb(0,50);
+        .cl(245);
+        img{
+            width: 100%;
+        }
+    }
+
+    // 植物
+    .plants{
+        .setwh(201, 251);
+        .rt(0,897);
+        z-index: 998;
+        img:nth-child(1){
+            .rb(0,0);
+            .setwh(117,84)
+        }
+        img:nth-child(2){
+            .rb(0,84);
+            .setwh(209,180)
+        }
+    }
 }

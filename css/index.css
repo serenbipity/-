@@ -49,16 +49,154 @@ html {
 ::-webkit-input-placeholder {
   color: #320e5f;
 }
-.pg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.fade {
+.homepage {
   width: 100vw;
   height: 0vw;
   height: 100%;
-  background: url(../img/bj.png) no-repeat;
+  background: url(../img/bj.png);
+  position: relative;
+}
+.homepage .copy {
+  width: 94.93333333vw;
+  height: 44.53333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -47.46666667vw;
+  top: 33.6vw;
+  z-index: 999;
+}
+.homepage .copy img {
+  width: 100%;
+}
+.homepage .log {
+  width: 16.4vw;
+  height: 22vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -8.2vw;
+  top: 7.46666667vw;
+}
+.homepage .log img {
+  width: 100%;
+}
+.homepage .border-kuan {
+  width: 96vw;
+  height: 0vw;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -48vw;
+  z-index: 4;
+}
+.homepage .border-kuan img {
+  width: 100%;
+  height: 100%;
+}
+.homepage .curtain {
+  width: 100vw;
+  height: 133.06666667vw;
+  z-index: 3;
+  position: absolute;
+  right: 0vw;
+  top: -6.66666667vw;
+}
+.homepage .curtain img {
+  width: 100%;
+  height: 100%;
+}
+.homepage .glass {
+  width: 126.8vw;
+  height: 118.53333333vw;
+  z-index: 2;
+  position: absolute;
+  right: 0vw;
+  top: 0vw;
+}
+.homepage .glass img {
+  width: 100%;
+  height: 100%;
+}
+.homepage .scenery {
+  width: 109.46666667vw;
+  height: 112.93333333vw;
+  position: absolute;
+  right: 0vw;
+  top: 0vw;
+  z-index: 1;
+}
+.homepage .ship {
+  width: 9.46666667vw;
+  height: 17.46666667vw;
+  position: absolute;
+  left: 53.46666667vw;
+  top: 73.2vw;
+  z-index: 1;
+}
+.homepage .ship img {
+  width: 100%;
+}
+.homepage .sofa {
+  width: 95.6vw;
+  height: 51.86666667vw;
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  margin-left: -47.8vw;
+  top: 97.46666667vw;
+  background: url(../img/sf.png) no-repeat;
+  position: relative;
+}
+.homepage .sofa .character {
+  width: 54.53333333vw;
+  height: 34.26666667vw;
+  position: absolute;
+  left: 15.33333333vw;
+  top: -6.13333333vw;
+}
+.homepage .softWen {
+  width: 65.73333333vw;
+  height: 21.46666667vw;
+  left: 0vw;
+  bottom: 23.46666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -32.86666667vw;
+  z-index: 999;
+}
+.homepage .softWen img {
+  width: 100%;
+}
+.homepage .face {
+  width: 31.6vw;
+  height: 14.26666667vw;
+  left: 0vw;
+  bottom: 6.66666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -16.33333333vw;
+}
+.homepage .face img {
+  width: 100%;
+}
+.homepage .plants {
+  width: 26.8vw;
+  height: 33.46666667vw;
+  position: absolute;
+  right: 0vw;
+  top: 119.6vw;
+  z-index: 998;
+}
+.homepage .plants img:nth-child(1) {
+  position: absolute;
+  right: 0vw;
+  bottom: 0vw;
+  width: 15.6vw;
+  height: 11.2vw;
+}
+.homepage .plants img:nth-child(2) {
+  position: absolute;
+  right: 0vw;
+  bottom: 11.2vw;
+  width: 27.86666667vw;
+  height: 24vw;
 }
