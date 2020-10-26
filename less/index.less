@@ -104,6 +104,7 @@ html {
     margin-top: -@h/2/@vw;
 }
 
+// 首页
 .homepage{
     .setwh(750, 0);
     height: 100%;
@@ -175,8 +176,13 @@ html {
     // 船
     .ship{
         .setwh(71, 131);
-        .lt(401,549);
+        .lt(500,549);
         z-index:1;
+        // 循环
+        animation-iteration-count: infinite;
+        animation-duration:10s;
+        animation-direction:alternate;
+        animation-timing-function:ease;
         img{
             width: 100%;
         }
@@ -190,9 +196,13 @@ html {
         top: 731 / @vw;
         background: url(../img/sf.png) no-repeat;
         position: relative;
+        // 人物
         .character{
             .setwh(409, 257);
             .lt(115,-46);
+            animation: play01 1s steps(2) infinite;
+            overflow: hidden;
+            background: url(../img/bushu-rw.png) no-repeat;
         }
     }
 
@@ -227,8 +237,110 @@ html {
             .setwh(117,84)
         }
         img:nth-child(2){
-            .rb(0,84);
-            .setwh(209,180)
+            .rb(-20,84);
+            .setwh(209,180);
+            animation: rock 3s alternate infinite;
         }
+    }
+}
+
+//照片 
+.photos{
+    .setwh(750, 0);
+    height: 100%;
+    background: url(../img/bj.jpg) ;
+    position: relative;
+    // 柔光
+    .subduedLight{
+        .setwh(1025, 1288);
+    }
+
+    // log
+    .log{
+        .setwh(98, 129);
+        .lt(81,73);
+    }
+
+    // 音乐
+    .music{
+        .setwh(79, 79);
+        .rt(58,69);
+
+    }
+
+    // 镜子
+    .mirror{
+        .setwh(689,801);
+        .cl(689);
+        top: 219 / @vw;
+        background: url(../img/jz.png);
+        overflow: hidden;
+        // add
+        .add{
+            .setwh(50, 51);
+            .cl(50);
+            top: 500 / @vw;
+            background: url(../img/j.png);
+            z-index: 999;
+        }
+        // 上传照片
+        .photos_sc{
+            .setwh(542, 655);
+            .ct(655);
+            .cl(542);
+        }
+    }
+
+    // 软文
+    .softWen_Two{
+        .setwh(408, 87);
+        .lb(0,301);
+        .cl(408);
+    }
+
+    // 按钮
+    .analysis{
+        .setwh(237,107);
+        .lb(0,103);
+        .cl(237);
+    }
+
+    // 边框
+    .border-kuan{
+        .setwh(720,0);
+        height:1435 / 1435 * 100%;
+        .cl(720);
+        z-index: 4;
+        top: 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+}
+
+
+
+// 步数动画
+@keyframes play01 {
+    0%{
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -818px 0;
+    }
+}
+
+@keyframes rock {
+    0%{
+        transform: rotate(10deg);
+        transform-origin: 50% 100%;
+        
+    }
+    100%{
+        transform: rotate(-10deg);
+        transform-origin: 50% 100%;
+        
     }
 }

@@ -128,9 +128,13 @@ html {
   width: 9.46666667vw;
   height: 17.46666667vw;
   position: absolute;
-  left: 53.46666667vw;
+  left: 66.66666667vw;
   top: 73.2vw;
   z-index: 1;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-timing-function: ease;
 }
 .homepage .ship img {
   width: 100%;
@@ -152,6 +156,9 @@ html {
   position: absolute;
   left: 15.33333333vw;
   top: -6.13333333vw;
+  animation: play01 1s steps(2) infinite;
+  overflow: hidden;
+  background: url(../img/bushu-rw.png) no-repeat;
 }
 .homepage .softWen {
   width: 65.73333333vw;
@@ -195,8 +202,113 @@ html {
 }
 .homepage .plants img:nth-child(2) {
   position: absolute;
-  right: 0vw;
+  right: -2.66666667vw;
   bottom: 11.2vw;
   width: 27.86666667vw;
   height: 24vw;
+  animation: rock 3s alternate infinite;
+}
+.photos {
+  width: 100vw;
+  height: 0vw;
+  height: 100%;
+  background: url(../img/bj.jpg);
+  position: relative;
+}
+.photos .subduedLight {
+  width: 136.66666667vw;
+  height: 171.73333333vw;
+}
+.photos .log {
+  width: 13.06666667vw;
+  height: 17.2vw;
+  position: absolute;
+  left: 10.8vw;
+  top: 9.73333333vw;
+}
+.photos .music {
+  width: 10.53333333vw;
+  height: 10.53333333vw;
+  position: absolute;
+  right: 7.73333333vw;
+  top: 9.2vw;
+}
+.photos .mirror {
+  width: 91.86666667vw;
+  height: 106.8vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -45.93333333vw;
+  top: 29.2vw;
+  background: url(../img/jz.png);
+  overflow: hidden;
+}
+.photos .mirror .add {
+  width: 6.66666667vw;
+  height: 6.8vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.33333333vw;
+  top: 66.66666667vw;
+  background: url(../img/j.png);
+  z-index: 999;
+}
+.photos .mirror .photos_sc {
+  width: 72.26666667vw;
+  height: 87.33333333vw;
+  top: 50%;
+  margin-top: -43.66666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -36.13333333vw;
+}
+.photos .softWen_Two {
+  width: 54.4vw;
+  height: 11.6vw;
+  left: 0vw;
+  bottom: 40.13333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -27.2vw;
+}
+.photos .analysis {
+  width: 31.6vw;
+  height: 14.26666667vw;
+  left: 0vw;
+  bottom: 13.73333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -15.8vw;
+}
+.photos .border-kuan {
+  width: 96vw;
+  height: 0vw;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -48vw;
+  z-index: 4;
+  top: 0;
+}
+.photos .border-kuan img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes play01 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -818px 0;
+  }
+}
+@keyframes rock {
+  0% {
+    transform: rotate(10deg);
+    transform-origin: 50% 100%;
+  }
+  100% {
+    transform: rotate(-10deg);
+    transform-origin: 50% 100%;
+  }
 }
