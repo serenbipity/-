@@ -5,6 +5,11 @@
   width: 100%;
   height: 100%;
 }
+.lte {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .gun-swiper-slide {
   font-size: 18px;
   -webkit-box-sizing: border-box;
@@ -174,6 +179,7 @@ html {
   width: 100%;
 }
 .homepage .face {
+  z-index: 999;
   width: 31.6vw;
   height: 14.26666667vw;
   left: 0vw;
@@ -233,52 +239,104 @@ html {
   right: 7.73333333vw;
   top: 9.2vw;
 }
-.photos .mirror {
+.photos .app-k {
   width: 91.86666667vw;
   height: 106.8vw;
+  z-index: 999;
   position: absolute;
   left: 50%;
   margin-left: -45.93333333vw;
   top: 29.2vw;
-  background: url(../img/jz.png);
-  overflow: hidden;
+  pointer-events: none;
 }
-.photos .mirror .add {
+.photos .add {
   width: 6.66666667vw;
   height: 6.8vw;
   position: absolute;
   left: 50%;
   margin-left: -3.33333333vw;
-  top: 66.66666667vw;
+  top: 93.33333333vw;
   background: url(../img/j.png);
   z-index: 999;
 }
-.photos .mirror .photos_sc {
-  width: 72.26666667vw;
-  height: 87.33333333vw;
-  top: 50%;
-  margin-top: -43.66666667vw;
+.photos .photos-to {
+  width: 73.86666667vw;
+  height: 86.53333333vw;
   position: absolute;
   left: 50%;
-  margin-left: -36.13333333vw;
+  margin-left: -36.93333333vw;
+  top: 38.66666667vw;
+}
+.photos .photos-to img {
+  width: 100%;
+  height: 100%;
+}
+.photos .fade {
+  width: 73.33333333vw;
+  height: 87.33333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -36.66666667vw;
+  top: 38vw;
+  border-radius: 10% 10% 70% 70%;
+  overflow: hidden;
+  z-index: 1;
+}
+.photos .fade .photos_sc {
+  width: 73.33333333vw;
+  height: 87.33333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -36.66666667vw;
 }
 .photos .softWen_Two {
   width: 54.4vw;
   height: 11.6vw;
   left: 0vw;
-  bottom: 40.13333333vw;
+  bottom: 30.66666667vw;
   position: absolute;
   left: 50%;
   margin-left: -27.2vw;
+  z-index: 999;
+}
+.photos .softWen_Two img {
+  width: 100%;
+  height: 100%;
 }
 .photos .analysis {
   width: 31.6vw;
   height: 14.26666667vw;
   left: 0vw;
-  bottom: 13.73333333vw;
+  bottom: 9.33333333vw;
   position: absolute;
   left: 50%;
   margin-left: -15.8vw;
+}
+.photos .data {
+  width: 64.13333333%;
+  height: 46.26666667vw;
+  left: 0vw;
+  bottom: 18.26666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -32.06666667vw;
+  z-index: 999;
+}
+.photos .data img {
+  width: 100%;
+  height: 100%;
+}
+.photos .click {
+  width: 44.66666667%;
+  height: 14.26666667vw;
+  left: 0vw;
+  bottom: 1.33333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -22.33333333vw;
+}
+.photos .click img {
+  width: 100%;
 }
 .photos .border-kuan {
   width: 96vw;
@@ -287,12 +345,532 @@ html {
   position: absolute;
   left: 50%;
   margin-left: -48vw;
-  z-index: 4;
   top: 0;
+  pointer-events: none;
 }
 .photos .border-kuan img {
   width: 100%;
   height: 100%;
+}
+.photos .background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bj4.png) no-repeat;
+  z-index: 999;
+}
+.photos .background .border-kuan {
+  width: 96vw;
+  height: 0vw;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -48vw;
+  top: 0;
+}
+.photos .background .border-kuan img {
+  width: 100%;
+  height: 100%;
+}
+.photos .background .drinks {
+  width: 77.6vw;
+  height: 116.53333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -38.8vw;
+  top: 39.6vw;
+}
+.photos .background .drinks img {
+  width: 100%;
+}
+.photos .background .guard {
+  width: 44.26666667vw;
+  height: 8.26666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -22.13333333vw;
+  bottom: 25.06666667vw;
+  z-index: 999;
+}
+.photos .background .guard img {
+  width: 100%;
+}
+.photos .firstGroup .fan {
+  width: 76.8vw;
+  height: 61.06666667vw;
+  position: absolute;
+  left: 6.26666667vw;
+  top: 70vw;
+}
+.photos .firstGroup .fan img {
+  width: 100%;
+}
+.photos .firstGroup .animals {
+  width: 82.8vw;
+  height: 94.26666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -41.4vw;
+  top: 30.66666667vw;
+  z-index: 999;
+}
+.photos .firstGroup .animals img {
+  width: 100%;
+}
+.photos .firstGroup .sofwen {
+  width: 78.26666667vw;
+  height: 28.53333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -39.13333333vw;
+  bottom: 31.33333333vw;
+}
+.photos .firstGroup .sofwen img {
+  width: 100%;
+}
+.photos .firstGroup .test {
+  width: 31.73333333vw;
+  height: 14.26666667vw;
+  position: absolute;
+  right: 10.26666667vw;
+  bottom: 13.33333333vw;
+}
+.photos .firstGroup .test img {
+  width: 100%;
+}
+.photos .firstGroup .share1 {
+  width: 42.8vw;
+  height: 14.26666667vw;
+  position: absolute;
+  left: 8.13333333vw;
+  bottom: 13.06666667vw;
+}
+.photos .firstGroup .share1 img {
+  width: 100%;
+}
+.photos .secondGroups .yez {
+  width: 95.6vw;
+  height: 48.4vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -47.8vw;
+  top: 86vw;
+  z-index: 999;
+}
+.photos .secondGroups .yez img {
+  width: 100%;
+}
+.photos .secondGroups .sofwen {
+  width: 78.26666667vw;
+  height: 28.26666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -39.13333333vw;
+  bottom: 31.33333333vw;
+}
+.photos .secondGroups .sofwen img {
+  width: 100%;
+}
+.photos .secondGroups .test {
+  width: 31.73333333vw;
+  height: 14.26666667vw;
+  position: absolute;
+  right: 10.26666667vw;
+  bottom: 13.33333333vw;
+}
+.photos .secondGroups .test img {
+  width: 100%;
+}
+.photos .secondGroups .share2 {
+  width: 42.8vw;
+  height: 14.26666667vw;
+  position: absolute;
+  left: 8.13333333vw;
+  bottom: 13.06666667vw;
+}
+.photos .secondGroups .share2 img {
+  width: 100%;
+}
+.photos .thirdGroups .stars {
+  width: 77.33333333vw;
+  height: 107.06666667vw;
+  position: absolute;
+  right: 2.53333333vw;
+  top: 22.53333333vw;
+  z-index: 999;
+}
+.photos .thirdGroups .stars img {
+  width: 100%;
+}
+.photos .thirdGroups .starstow {
+  width: 96.26666667vw;
+  height: 34.26666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -48.13333333vw;
+  top: 90.66666667vw;
+}
+.photos .thirdGroups .starstow img {
+  width: 100%;
+}
+.photos .thirdGroups .sofwen {
+  width: 78.26666667vw;
+  height: 28.26666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -39.13333333vw;
+  bottom: 31.33333333vw;
+}
+.photos .thirdGroups .sofwen img {
+  width: 100%;
+}
+.photos .thirdGroups .test {
+  width: 31.73333333vw;
+  height: 14.26666667vw;
+  position: absolute;
+  right: 10.26666667vw;
+  bottom: 13.33333333vw;
+}
+.photos .thirdGroups .test img {
+  width: 100%;
+}
+.photos .thirdGroups .share3 {
+  width: 42.8vw;
+  height: 14.26666667vw;
+  position: absolute;
+  left: 8.13333333vw;
+  bottom: 13.06666667vw;
+}
+.photos .thirdGroups .share3 img {
+  width: 100%;
+}
+.photos .page .sofwensan {
+  width: 65.33333333vw;
+  height: 27.73333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -32.66666667vw;
+  bottom: 34.66666667vw;
+}
+.photos .page .sofwensan img {
+  width: 100%;
+}
+.photos .page .qrcode {
+  width: 16vw;
+  height: 16vw;
+  position: absolute;
+  left: 6.8vw;
+  bottom: 7.2vw;
+}
+.photos .page .products {
+  width: 51.06666667vw;
+  height: 51.86666667vw;
+  position: absolute;
+  right: 0vw;
+  bottom: 0vw;
+}
+.photos .page .products img {
+  width: 100%;
+}
+.photos .page .savePictures {
+  width: 35.33333333vw;
+  height: 12.4vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -17.66666667vw;
+  bottom: 20.4vw;
+}
+.photos .page .receive {
+  width: 35.33333333vw;
+  height: 12.4vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -17.66666667vw;
+  bottom: 6.8vw;
+}
+.photos .lion .sofwensan {
+  width: 65.33333333vw;
+  height: 27.73333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -32.66666667vw;
+  bottom: 34.66666667vw;
+}
+.photos .lion .sofwensan img {
+  width: 100%;
+}
+.photos .lion .qrcode {
+  width: 16vw;
+  height: 16vw;
+  position: absolute;
+  left: 6.8vw;
+  bottom: 7.2vw;
+}
+.photos .lion .products {
+  width: 51.06666667vw;
+  height: 51.86666667vw;
+  position: absolute;
+  right: 0vw;
+  bottom: 0vw;
+}
+.photos .lion .products img {
+  width: 100%;
+}
+.photos .lion .savePictures {
+  width: 35.33333333vw;
+  height: 12.4vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -17.66666667vw;
+  bottom: 20.4vw;
+}
+.photos .lion .receive {
+  width: 35.33333333vw;
+  height: 12.4vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -17.66666667vw;
+  bottom: 6.8vw;
+}
+.photos .starsk .sofwensan {
+  width: 65.33333333vw;
+  height: 27.73333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -32.66666667vw;
+  bottom: 34.66666667vw;
+}
+.photos .starsk .sofwensan img {
+  width: 100%;
+}
+.photos .starsk .qrcode {
+  width: 16vw;
+  height: 16vw;
+  position: absolute;
+  left: 6.8vw;
+  bottom: 7.2vw;
+}
+.photos .starsk .products {
+  width: 51.06666667vw;
+  height: 51.86666667vw;
+  position: absolute;
+  right: 0vw;
+  bottom: 0vw;
+}
+.photos .starsk .products img {
+  width: 100%;
+}
+.photos .starsk .savePictures {
+  width: 35.33333333vw;
+  height: 12.4vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -17.66666667vw;
+  bottom: 20.4vw;
+}
+.photos .starsk .receive {
+  width: 35.33333333vw;
+  height: 12.4vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -17.66666667vw;
+  bottom: 6.8vw;
+}
+.luckyDraw {
+  width: 100vw;
+  height: 0vw;
+  height: 100%;
+  background: url(../img/BG.png);
+}
+.luckyDraw .border-kuan {
+  width: 96vw;
+  height: 0vw;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -48vw;
+  z-index: 4;
+}
+.luckyDraw .border-kuan img {
+  width: 100%;
+  height: 100%;
+}
+.luckyDraw .log {
+  width: 16.4vw;
+  height: 22vw;
+  position: absolute;
+  left: 10.8vw;
+  top: 9.33333333vw;
+  top: 7.46666667vw;
+}
+.luckyDraw .log img {
+  width: 100%;
+}
+.luckyDraw .music {
+  width: 10.53333333vw;
+  height: 10.53333333vw;
+  position: absolute;
+  right: 7.73333333vw;
+  top: 9.2vw;
+}
+.luckyDraw .subduedLight {
+  width: 136.66666667vw;
+  height: 171.73333333vw;
+}
+.luckyDraw .to .signature {
+  width: 99.33333333vw;
+  height: 122.53333333vw;
+  position: absolute;
+  left: -2vw;
+  bottom: 42.66666667vw;
+}
+.luckyDraw .to .cop {
+  width: 67.46666667vw;
+  height: 24.66666667vw;
+  left: 0vw;
+  bottom: 29.6vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -33.73333333vw;
+}
+.luckyDraw .to .luckatGambling {
+  z-index: 999;
+  width: 31.73333333vw;
+  height: 14.26666667vw;
+  left: 0vw;
+  bottom: 11.33333333vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -15.86666667vw;
+}
+.luckyDraw .seconds .giftBox {
+  width: 98vw;
+  height: 118vw;
+  position: absolute;
+  left: -2vw;
+  bottom: 42.66666667vw;
+}
+.luckyDraw .seconds .giftBox img {
+  width: 100%;
+}
+.luckyDraw .seconds .address {
+  z-index: 999 !important;
+  width: 70.26666667vw;
+  height: 22.8vw;
+  left: 0vw;
+  bottom: 32.66666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -35.13333333vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.luckyDraw .seconds .address li:first-child img {
+  width: 11.33333333vw;
+  height: 4.26666667vw;
+}
+.luckyDraw .seconds .address li:first-child input {
+  width: 56.8vw;
+  height: 4.26666667vw;
+  border-bottom: 1px solid #fff;
+}
+.luckyDraw .seconds .address li:nth-child(2) img {
+  width: 11.33333333vw;
+  height: 4.26666667vw;
+}
+.luckyDraw .seconds .address li:nth-child(2) input {
+  width: 56.8vw;
+  height: 4.26666667vw;
+  border-bottom: 1px solid #fff;
+}
+.luckyDraw .seconds .address li:nth-child(3) img {
+  width: 21.06666667vw;
+  height: 4.8vw;
+}
+.luckyDraw .seconds .address li:nth-child(3) input {
+  width: 46.66666667vw;
+  height: 4.26666667vw;
+  border-bottom: 1px solid #fff;
+}
+.luckyDraw .seconds .ubmit {
+  z-index: 999;
+  width: 31.73333333vw;
+  height: 14.26666667vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -15.86666667vw;
+  bottom: 11.86666667vw;
+}
+.luckyDraw .hree {
+  width: 98vw;
+  height: 118vw;
+  position: absolute;
+  left: -2vw;
+  bottom: 40.8vw;
+}
+.dnd {
+  width: 100vw;
+  height: 0vw;
+  height: 100%;
+  background: url(../img/BG.png);
+}
+.dnd .border-kuan {
+  width: 96vw;
+  height: 0vw;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -48vw;
+  z-index: 4;
+}
+.dnd .border-kuan img {
+  width: 100%;
+  height: 100%;
+}
+.dnd .log {
+  width: 16.4vw;
+  height: 22vw;
+  position: absolute;
+  left: 10.8vw;
+  top: 9.33333333vw;
+  top: 7.46666667vw;
+}
+.dnd .log img {
+  width: 100%;
+}
+.dnd .music {
+  width: 10.53333333vw;
+  height: 10.53333333vw;
+  position: absolute;
+  right: 7.73333333vw;
+  top: 9.2vw;
+}
+.dnd .subduedLight {
+  width: 136.66666667vw;
+  height: 171.73333333vw;
+}
+.dnd .submit {
+  width: 31.73333333vw;
+  height: 14.26666667vw;
+  left: 0vw;
+  bottom: 11.2vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -15.86666667vw;
+}
+.dnd .dnds {
+  width: 98vw;
+  height: 118vw;
+  position: absolute;
+  left: -2vw;
+  bottom: 34.66666667vw;
+}
+.dnd .dnds img {
+  width: 100%;
 }
 @keyframes play01 {
   0% {

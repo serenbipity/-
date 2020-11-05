@@ -2,9 +2,23 @@
     display: none;
 }
 
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
 
-.swiper-container {width: 100%; height: 100%; }
-.gun-swiper-slide{font-size: 18px;-webkit-box-sizing: border-box; box-sizing: border-box;}
+.lte {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.gun-swiper-slide {
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -33,10 +47,11 @@ img[src=""] {
     display: none;
 }
 
-@font-face{
+@font-face {
     font-family: zdy;
-    src:url("../font/TrajanPro3-Regular.otf");
+    src: url("../font/TrajanPro3-Regular.otf");
 }
+
 /*====== 建议body给稿子底色背景 ==============*/
 body,
 html {
@@ -105,101 +120,110 @@ html {
 }
 
 // 首页
-.homepage{
+.homepage {
     .setwh(750, 0);
     height: 100%;
-    background: url(../img/bj.png) ;
+    background: url(../img/bj.png);
     position: relative;
+
     // 文案
-    .copy{
+    .copy {
 
         .setwh(712, 334);
         .cl(712);
         top: 252 / @vw;
         z-index: 999;
-        img{
+
+        img {
             width: 100%;
         }
     }
+
     // log
-    .log{
+    .log {
         .setwh(123, 165);
         .cl(123);
         top: 56 / @vw;
-        img{
+
+        img {
             width: 100%;
         }
     }
 
     // 边框
-    .border-kuan{
-        .setwh(720,0);
-        height:1435 / 1435 * 100%;
+    .border-kuan {
+        .setwh(720, 0);
+        height: 1435 / 1435 * 100%;
         .cl(720);
         z-index: 4;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
         }
     }
 
     // 窗帘
-    .curtain{
+    .curtain {
         position: absolute;
-        .setwh(750,998);
+        .setwh(750, 998);
         z-index: 3;
         .rt(0, -50);
-        img{
+
+        img {
             width: 100%;
             height: 100%;
         }
     }
 
     // 玻璃
-    .glass{
+    .glass {
         .setwh(951, 889);
         z-index: 2;
         .rt(0, 0);
-        img{
+
+        img {
             width: 100%;
             height: 100%;
         }
     }
 
     // 风景
-    .scenery{
+    .scenery {
         .setwh(821, 847);
         .rt(0, 0);
         z-index: 1;
     }
 
     // 船
-    .ship{
+    .ship {
         .setwh(71, 131);
-        .lt(500,549);
-        z-index:1;
+        .lt(500, 549);
+        z-index: 1;
         // 循环
         animation-iteration-count: infinite;
-        animation-duration:10s;
-        animation-direction:alternate;
-        animation-timing-function:ease;
-        img{
+        animation-duration: 10s;
+        animation-direction: alternate;
+        animation-timing-function: ease;
+
+        img {
             width: 100%;
         }
     }
 
     // 沙发
-    .sofa{
+    .sofa {
         .setwh(717, 389);
         z-index: 3;
         .cl(717);
         top: 731 / @vw;
         background: url(../img/sf.png) no-repeat;
         position: relative;
+
         // 人物
-        .character{
+        .character {
             .setwh(409, 257);
-            .lt(115,-46);
+            .lt(115, -46);
             animation: play01 1s steps(2) infinite;
             overflow: hidden;
             background: url(../img/bushu-rw.png) no-repeat;
@@ -207,140 +231,764 @@ html {
     }
 
     // 软文
-    .softWen{
+    .softWen {
         .setwh(493, 161);
-        .lb(0,176);
+        .lb(0, 176);
         .cl(493);
         z-index: 999;
-        img{
+
+        img {
             width: 100%;
         }
     }
 
     // 刷脸
-    .face{
+    .face {
+        z-index: 999;
         .setwh(237, 107);
-        .lb(0,50);
+        .lb(0, 50);
         .cl(245);
-        img{
+
+        img {
             width: 100%;
         }
     }
 
     // 植物
-    .plants{
+    .plants {
         .setwh(201, 251);
-        .rt(0,897);
+        .rt(0, 897);
         z-index: 998;
-        img:nth-child(1){
-            .rb(0,0);
-            .setwh(117,84)
+
+        img:nth-child(1) {
+            .rb(0, 0);
+            .setwh(117, 84)
         }
-        img:nth-child(2){
-            .rb(-20,84);
-            .setwh(209,180);
+
+        img:nth-child(2) {
+            .rb(-20, 84);
+            .setwh(209, 180);
             animation: rock 3s alternate infinite;
         }
     }
 }
 
 //照片 
-.photos{
+.photos {
     .setwh(750, 0);
     height: 100%;
-    background: url(../img/bj.jpg) ;
+    background: url(../img/bj.jpg);
     position: relative;
+
     // 柔光
-    .subduedLight{
+    .subduedLight {
         .setwh(1025, 1288);
     }
 
     // log
-    .log{
+    .log {
         .setwh(98, 129);
-        .lt(81,73);
+        .lt(81, 73);
     }
 
     // 音乐
-    .music{
+    .music {
         .setwh(79, 79);
-        .rt(58,69);
+        .rt(58, 69);
 
     }
 
     // 镜子
-    .mirror{
-        .setwh(689,801);
-        .cl(689);
-        top: 219 / @vw;
-        background: url(../img/jz.png);
-        overflow: hidden;
-        // add
-        .add{
-            .setwh(50, 51);
-            .cl(50);
-            top: 500 / @vw;
-            background: url(../img/j.png);
-            z-index: 999;
-        }
-        // 上传照片
-        .photos_sc{
-            .setwh(542, 655);
-            .ct(655);
-            .cl(542);
-        }
-    }
 
-    // 软文
-    .softWen_Two{
-        .setwh(408, 87);
-        .lb(0,301);
-        .cl(408);
-    }
-
-    // 按钮
-    .analysis{
-        .setwh(237,107);
-        .lb(0,103);
-        .cl(237);
-    }
 
     // 边框
-    .border-kuan{
-        .setwh(720,0);
-        height:1435 / 1435 * 100%;
-        .cl(720);
-        z-index: 4;
-        top: 0;
-        img{
+    .app-k {
+        width: 689 / @vw;
+        height: 801 / @vw;
+        z-index: 999;
+        .cl(689);
+        top: 219 / @vw;
+        pointer-events: none;
+    }
+
+    // add
+    .add {
+        .setwh(50, 51);
+        .cl(50);
+        top: 700 / @vw;
+        background: url(../img/j.png);
+        z-index: 999;
+    }
+
+    // 照片
+    .photos-to {
+        .setwh(554, 649);
+        .cl(554);
+        top: 290 / @vw;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+
+    // 上传照片
+    .fade {
+        .setwh(550, 655);
+        .cl(550);
+        top: 285 / @vw;
+        border-radius: 10% 10% 70% 70%;
+        overflow: hidden;
+        z-index: 1;
+
+        .photos_sc {
+            .setwh(550, 655);
+            .cl(550);
+        }
+    }
+
+
+
+
+
+    // 软文
+    .softWen_Two {
+        .setwh(408, 87);
+        .lb(0, 230);
+        .cl(408);
+        z-index: 999;
+
+        img {
             width: 100%;
             height: 100%;
         }
     }
-    
+
+    // 按钮
+    .analysis {
+        .setwh(237, 107);
+        .lb(0, 70);
+        .cl(237);
+    }
+
+    // 数据
+    .data {
+        width: 481/ 750* 100%;
+        // height:374 / 1467 * 100%;
+        height: 347 / @vw;
+        // .setwh(481,347);
+        .lb(0, 137);
+        .cl(481);
+        z-index: 999;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // 点击
+    .click {
+        width: 335/ 750* 100%;
+        height: 107 / @vw;
+        .lb(0, 10);
+        .cl(335);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    // 边框
+    .border-kuan {
+        .setwh(720, 0);
+        height: 1435 / 1435 * 100%;
+        .cl(720);
+        top: 0;
+        pointer-events: none;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+    // 背景
+    .background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 1467 / 1467 * 100%;
+        background: url(../img/bj4.png) no-repeat;
+        z-index: 999;
+
+        // 边框
+        .border-kuan {
+            .setwh(720, 0);
+            height: 1435 / 1435 * 100%;
+            .cl(720);
+            top: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        // 背景
+        .drinks {
+            .setwh(582, 874);
+            .cl(582);
+            top: 297 / @vw;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 守护点击
+        .guard {
+            .setwh(332, 62);
+            .cl(332);
+            bottom: 188 / @vw;
+            z-index: 999;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // 第一组
+    .firstGroup {
+
+        // 扇子
+        .fan {
+            .setwh(576, 458);
+            .lt(47, 525);
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 动物
+        .animals {
+            .setwh(621, 707);
+            .cl(621);
+            top: 230 / @vw;
+            z-index: 999;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 软文
+        .sofwen {
+            .setwh(587, 214);
+            .cl(587);
+            bottom: 235 / @vw;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        ;
+
+        // 测试
+        .test {
+            .setwh(238, 107);
+            .rb(77, 100);
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 分享
+        .share1 {
+            .setwh(321, 107);
+            .lb(61, 98);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // 第二组
+    .secondGroups {
+
+
+        // 叶子
+        .yez {
+            .setwh(717, 363);
+            .cl(717);
+            top: 645 / @vw;
+            z-index: 999;
+
+            img {
+                width: 100%;
+
+            }
+        }
+
+        // 软文
+        .sofwen {
+            .setwh(587, 212);
+            .cl(587);
+            bottom: 235 / @vw;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        ;
+
+        // 测试
+        .test {
+            .setwh(238, 107);
+            .rb(77, 100);
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 分享
+        .share2 {
+            .setwh(321, 107);
+            .lb(61, 98);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // 第三组
+    .thirdGroups {
+
+        // 星星
+        .stars {
+            .setwh(580, 803);
+            .rt(19, 169);
+            z-index: 999;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 星星2
+        .starstow {
+            .setwh(722, 257);
+            .cl(722);
+            top: 680 / @vw;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 软文
+        .sofwen {
+            .setwh(587, 212);
+            .cl(587);
+            bottom: 235 / @vw;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        ;
+
+        // 测试
+        .test {
+            .setwh(238, 107);
+            .rb(77, 100);
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 分享
+        .share3 {
+            .setwh(321, 107);
+            .lb(61, 98);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // 叶子页面
+    .page {
+
+        // 软文
+        .sofwensan {
+            .setwh(490, 208);
+            .cl(490);
+            bottom: 260 / @vw;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 二维码
+        .qrcode {
+            .setwh(120, 120);
+            .lb(51, 54);
+        }
+
+
+        // 产品
+        .products {
+            .setwh(383, 389);
+            .rb(0, 0);
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 存图
+        .savePictures {
+            .setwh(265, 93);
+            .cl(265);
+            bottom: 153 / @vw;
+        }
+
+        // 领取
+        .receive {
+            .setwh(265, 93);
+            .cl(265);
+            bottom: 51 / @vw;
+        }
+    }
+
+    // 狮子
+    .lion {
+
+        // 软文
+        .sofwensan {
+            .setwh(490, 208);
+            .cl(490);
+            bottom: 260 / @vw;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 二维码
+        .qrcode {
+            .setwh(120, 120);
+            .lb(51, 54);
+        }
+
+
+        // 产品
+        .products {
+            .setwh(383, 389);
+            .rb(0, 0);
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 存图
+        .savePictures {
+            .setwh(265, 93);
+            .cl(265);
+            bottom: 153 / @vw;
+        }
+
+        // 领取
+        .receive {
+            .setwh(265, 93);
+            .cl(265);
+            bottom: 51 / @vw;
+        }
+    }
+
+    // 星星
+    .starsk {
+
+        // 软文
+        .sofwensan {
+            .setwh(490, 208);
+            .cl(490);
+            bottom: 260 / @vw;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 二维码
+        .qrcode {
+            .setwh(120, 120);
+            .lb(51, 54);
+        }
+
+
+        // 产品
+        .products {
+            .setwh(383, 389);
+            .rb(0, 0);
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 存图
+        .savePictures {
+            .setwh(265, 93);
+            .cl(265);
+            bottom: 153 / @vw;
+        }
+
+        // 领取
+        .receive {
+            .setwh(265, 93);
+            .cl(265);
+            bottom: 51 / @vw;
+        }
+    }
+
+}
+
+// luckyDraw抽奖
+.luckyDraw {
+    .setwh(750, 0);
+    height: 1467 / 1467 * 100%;
+    background: url(../img/BG.png);
+
+    // 边框
+    .border-kuan {
+        .setwh(720, 0);
+        height: 1435 / 1435 * 100%;
+        .cl(720);
+        z-index: 4;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // log
+    .log {
+        .setwh(123, 165);
+        .lt(81, 70);
+        top: 56 / @vw;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    // 音乐
+    .music {
+        .setwh(79, 79);
+        .rt(58, 69);
+
+    }
+
+    // 柔光
+    .subduedLight {
+        .setwh(1025, 1288);
+    }
+
+    // 第一组
+    .to {
+
+        // 签名
+        .signature {
+            .setwh(745, 919);
+            .lb(-15, 320)
+        }
+
+        // cop
+        .cop {
+            .setwh(506, 185);
+            .lb(0, 222);
+            .cl(506);
+        }
+
+        // 手气
+        .luckatGambling {
+            z-index: 999;
+            .setwh(238, 107);
+            .lb(0, 85);
+            .cl(238);
+        }
+    }
+
+    // 第二组
+    .seconds{
+        // 礼盒
+        .giftBox{
+            .setwh(735,885);
+            .lb(-15,320);
+            img{
+                width: 100%;
+            }
+        }
+
+        // 地址
+        .address{
+            z-index: 999 !important;
+            .setwh(527,171);
+            .lb(0,245);
+            .cl(527);
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            li:first-child{
+                img{
+                    .setwh(85,32);
+                }
+                input{
+                    .setwh(426,32);
+                    border-bottom: 1px solid #fff;
+                }
+            }
+
+            li:nth-child(2){
+                img{
+                    .setwh(85,32);
+                }
+                input{
+                    .setwh(426,32);
+                    border-bottom: 1px solid #fff;
+                }
+            }
+
+            li:nth-child(3){
+                img{
+                    .setwh(158,36);
+                }
+                input{
+                    .setwh(350,32);
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+
+        // 提交
+        .ubmit{
+            z-index: 999;
+            .setwh(238,107);
+            .cl(238);
+            bottom: 89 / @vw;
+        }
+    }
+
+    // 第三组
+    .hree{
+        .setwh(735, 885);
+        .lb(-15,306);
+    }
 }
 
 
+// 结束
+.dnd {
+    .setwh(750, 0);
+    height: 1467 / 1467 * 100%;
+    background: url(../img/BG.png);
+
+    // 边框
+    .border-kuan {
+        .setwh(720, 0);
+        height: 1435 / 1435 * 100%;
+        .cl(720);
+        z-index: 4;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // log
+    .log {
+        .setwh(123, 165);
+        .lt(81, 70);
+        top: 56 / @vw;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    // 音乐
+    .music {
+        .setwh(79, 79);
+        .rt(58, 69);
+
+    }
+
+    // 柔光
+    .subduedLight {
+        .setwh(1025, 1288);
+    }
+
+    // 提交
+    .submit {
+        .setwh(238, 107);
+        .lb(0, 84);
+        .cl(238);
+    }
+
+    // 抽奖结束
+    .dnds {
+        .setwh(735, 885);
+        .lb(-15, 260);
+
+        img {
+            width: 100%;
+        }
+    }
+}
 
 // 步数动画
 @keyframes play01 {
-    0%{
+    0% {
         background-position: 0 0;
     }
+
     100% {
         background-position: -818px 0;
     }
 }
 
 @keyframes rock {
-    0%{
+    0% {
         transform: rotate(10deg);
         transform-origin: 50% 100%;
-        
+
     }
-    100%{
+
+    100% {
         transform: rotate(-10deg);
         transform-origin: 50% 100%;
-        
+
     }
 }

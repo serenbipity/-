@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=750,target-densitydpi=device-dpi,user-scalable=no">
@@ -8,14 +9,14 @@
     <!-- 样式 -->
     <link rel="stylesheet" href="css/index.css">
     <!-- 引入线上动画 -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
+
 <body>
     <!-- 首页 -->
-    <div class="homepage dn">
+    <div class="homepage ">
         <!-- 文案 -->
         <div class="copy">
             <img src="img/wa.png" alt="">
@@ -71,14 +72,14 @@
         <!-- 植物 -->
         <div class="plants">
             <img src="img/home-tree1.png" alt="">
-            <img src="img/home-tree2.png"  alt="">
+            <img src="img/home-tree2.png" alt="">
         </div>
     </div>
 
     <!-- 上传照片 -->
-    <div class="photos">
+    <div class="photos dn">
         <!-- 柔光 -->
-        <div class="subduedLight">  
+        <div class="subduedLight">
             <img src="img/rg.png" alt="">
         </div>
 
@@ -91,22 +92,39 @@
         <div class="music">
             <img src="img/yy.png" alt="">
         </div>
-        
+
         <!-- 镜子 -->
-        <div class="mirror">
+        <div class="mirror" id="app">
+            <!-- 边框 -->
+            <div class="app-k">
+                <img src="img/jz.png" alt="">
+            </div>
+
             <!-- 添加 -->
             <div class="add" id="finish">
-
+                <input id="takepicture" type="file" style="width: 100%;height: 100%;opacity: 0;">
             </div>
 
             <!-- 照片 -->
-            <div class="photos_sc">
-
+            <div class="photos-to">
+                <img src="img/zp.png" alt="">
             </div>
+
+             <!-- 照片 -->
+             <div class="fade">
+                <div class="photos_sc">
+
+                </div>
+             </div>
+            
         </div>
 
+        
+
+        
+
         <!-- 软文 -->
-        <div class="softWen_Two">
+        <div class="softWen_Two ">
             <img src="img/rw1.png" alt="">
         </div>
 
@@ -119,9 +137,314 @@
         <div class="analysis">
             <img src="img/fx.png" alt="">
         </div>
+
+        <!-- 数据 -->
+        <ul class="data">
+
+        </ul>
+
+        <!-- 点击 -->
+        <div class="click dn">
+            <img src="img/butto.png" alt="">
+        </div>
+
+        <!-- 背景 -->
+        <div class="background dn">
+
+            <!-- 背景 -->
+            <div class="drinks">
+            </div>
+
+            <!-- 守护点击 -->
+            <div class="guard">
+                <img src="img/sh.png" alt="">
+            </div>
+
+            <!-- 边框 -->
+            <div class="border-kuan">
+                <img src="img/kuan.png" alt="">
+            </div>
+
+
+        </div>
+
+        <!-- 第一组 -->
+        <div class="firstGroup dn">
+            <!-- 扇子 -->
+            <div class="fan">
+                <img src="img/sz.png" alt="">
+            </div>
+
+            <!-- 动物 -->
+            <div class="animals">
+                <img src="img/dw.png" alt="">
+            </div>
+
+
+            <!-- 软文 -->
+            <div class="sofwen">
+                <img src="img/copy.png">
+            </div>
+
+            <!-- 再测试一次 -->
+            <div class="test">
+                <img src="img/cs.png" alt="">
+            </div>
+
+            <!-- 分享 -->
+            <div class="share1">
+                <img src="img/fxt.png" alt="">
+            </div>
+        </div>
+
+        <!-- 第二组 -->
+        <div class="secondGroups dn">
+           
+
+            <!-- 叶子 -->
+            <div class="yez">
+                <img src="img/yez.png" alt="">
+            </div>
+
+
+            <!-- 软文 -->
+            <div class="sofwen">
+                <img src="img/rw2.png">
+            </div>
+
+             <!-- 再测试一次 -->
+             <div class="test">
+                <img src="img/cs.png" alt="">
+            </div>
+
+            <!-- 分享 -->
+            <div class="share2">
+                <img src="img/fxt.png" alt="">
+            </div>
+        </div>
+
+        <!-- 第三组 -->
+        <div class="thirdGroups dn">
+             <!-- 星星 -->
+             <div class="stars">
+                <img src="img/xx.png" alt="">
+            </div>
+
+            <!-- 星星2 -->
+            <div class="starstow">
+                <img src="img/xx2.png" alt="">
+            </div>
+
+            <!-- 软文 -->
+            <div class="sofwen">
+                <img src="img/rw3.png">
+            </div>
+
+             <!-- 再测试一次 -->
+             <div class="test">
+                <img src="img/cs.png" alt="">
+            </div>
+
+            <!-- 分享 -->
+            <div class="share3 ">
+                <img src="img/fxt.png" alt="">
+            </div>
+        </div>
+
+        <!-- 叶子页面 -->
+        <div class="page dn">
+            <!-- 软文 -->
+            <div class="sofwensan">
+                <img src="img/rw2.png">
+            </div>
+
+            <!-- 二维码 -->
+            <div class="qrcode">
+                <img src="img/QR.png" alt="">
+            </div>
+
+            <!-- 产品 -->
+            <div class="products">
+                <img src="img/cp.png" alt="">
+            </div>
+
+            <!-- 长安存图 -->
+            <div class="savePictures">
+                <img src="img/button.png" alt="">
+            </div>
+
+              <!-- 领取 -->
+              <div class="receive">
+                <img src="img/button1.png" alt="">
+            </div>
+        </div>
+
+        <!-- 狮子 -->
+        <div class="lion dn">
+             <!-- 软文 -->
+             <div class="sofwensan">
+                <img src="img/copy.png">
+            </div>
+
+            <!-- 二维码 -->
+            <div class="qrcode">
+                <img src="img/sz1.png" alt="">
+            </div>
+
+            <!-- 产品 -->
+            <div class="products">
+                <img src="img/cp2.png" alt="">
+            </div>
+
+            <!-- 长安存图 -->
+            <div class="savePictures">
+                <img src="img/button.png" alt="">
+            </div>
+
+              <!-- 领取 -->
+              <div class="receive">
+                <img src="img/button1.png" alt="">
+            </div>
+        </div>
+
+        <!-- 星星 -->
+        <div class="starsk dn">
+            <!-- 软文 -->
+            <div class="sofwensan">
+                <img src="img/rw3.png">
+            </div>
+
+            <!-- 二维码 -->
+            <div class="qrcode">
+                <img src="img/QR3.png" alt="">
+            </div>
+
+            <!-- 产品 -->
+            <div class="products">
+                <img src="img/cp3.png" alt="">
+            </div>
+
+            <!-- 长安存图 -->
+            <div class="savePictures">
+                <img src="img/button.png" alt="">
+            </div>
+
+              <!-- 领取 -->
+              <div class="receive">
+                <img src="img/button1.png" alt="">
+            </div>
+        </div>
+        <img src="" class="dtImg">
     </div>
+
+    <!-- 抽奖页面 -->
+    <div class="luckyDraw dn">
+        <!-- border -->
+        <div class="border-kuan">
+            <img src="img/kuan.png" alt="">
+        </div>
+
+         <!-- log -->
+         <div class="log">
+            <img src="img/log.png" alt="">
+        </div>
+
+
+          <!-- 音乐log -->
+          <div class="music">
+            <img src="img/yy.png" alt="">
+        </div>
+
+        <!-- 柔光 -->
+        <div class="subduedLight">
+            <img src="img/rg.png" alt="">
+        </div>
+
+       <!-- 第一组 -->
+       <div class="to dn">
+             <!-- 签名 -->
+        <div class="signature">
+            <img src="img/qm.png" alt="">
+        </div>
+
+        <!-- 软文 -->
+        <div class="cop">
+            <img src="img/cop.png" alt="">
+        </div>
+
+        <!-- 手气 -->
+        <div class="luckatGambling">
+            <img src="img/sq.png" alt="">
+        </div>
+       </div>
+
+       <!-- 第二组 -->
+       <div class="seconds dn">
+
+            <!-- 礼盒 -->
+            <div class="giftBox">
+                <img src="img/lh.png" alt="">
+            </div>
+
+            <!-- 地址 -->
+            <ul class="address">
+                <li><img src="img/xm.png" alt=""><input type="text"></li>
+
+                <li><img src="img/dh.png" alt=""><input type="text"></li>
+
+                <li><img src="img/dz.png" alt=""><input type="text"></li>
+            </ul>
+
+            <!-- 提交 -->
+            <div class="ubmit ">
+                <img src="img/tj1.png" alt="">
+            </div>
+       </div>
+
+       <!-- 第三组 -->
+       <div class="hree dn">
+            <img src="img/lh2.png" alt="">
+       </div>
+    </div>
+
+    <!-- 结束 -->
+    <div class="dnd dn">
+        <!-- border -->
+        <div class="border-kuan">
+            <img src="img/kuan.png" alt="">
+        </div>
+
+         <!-- log -->
+         <div class="log">
+            <img src="img/log.png" alt="">
+        </div>
+
+
+          <!-- 音乐log -->
+          <div class="music">
+            <img src="img/yy.png" alt="">
+        </div>
+
+        <!-- 柔光 -->
+        <div class="subduedLight">
+            <img src="img/rg.png" alt="">
+        </div>
+
+        <!-- 提交 -->
+        <div class="submit">
+            <img src="img/tj.png" alt="">
+        </div>
+
+        <!-- 抽奖 -->
+        <div class="dnds">
+            <img src="img/cj.png" alt="">
+        </div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/html2canvas.js"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>

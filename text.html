@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background:red;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <!-- 移动端触屏事件 -->
+    <script>
+        var div = document.querySelector("div");
+        var initX = null;
+        var initY = null;
+        var x=y=null;
+        div.addEventListener("touchstart",function(){
+            /* 手指最开始按下去的位置 */
+            initX = event.targetTouches[0].pageX;
+            initY = event.targetTouches[0].pageY;
+            /* 盒子当前的位置 */
+            // x = this.offsetLeft;
+            // y = this.offsetTop;
+            // console.log(x,y);
+            var domInfo = this.getBoundingClientRect();
+            x = domInfo.x;
+            y = domInfo.y;
+            console.log(domInfo);
+            
+        });
+        div.addEventListener("touchmove",function(){
+            /* 手指移动的距离 = 移动的当前位置 - 最开始的位置 */
+            var moveX = event.targetTouches[0].pageX - initX;
+            var moveY = event.targetTouches[0].pageY - initY;
+
+            div.style.left = x + moveX + "px";
+            div.style.top = y + moveY + "px";
+            // div.style.transform = "translate("+ (x + moveX) +"px,"+(y + moveY)+"px)";
+        });
+    </script>
+</body>
+</html>
